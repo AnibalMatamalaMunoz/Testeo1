@@ -1,0 +1,66 @@
+$primary-color: #007bff; // azul claro
+$secondary-color: #6c757d; // gris oscuro
+$white-color: #fff; // blanco
+$gray-color: #f8f9fa; // gris claro
+
+body {
+  background-color: $white-color;
+}
+
+nav {
+  background-color: $white-color;
+  border-bottom: 1px solid $gray-color;
+}
+
+nav .navbar-brand img {
+  max-height: 50px;
+}
+
+nav .nav-link {
+  color: $secondary-color;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav .nav-link.active,
+nav .nav-link:hover {
+  color: $primary-color;
+}
+
+.jumbotron {
+  background-color: $primary-color;
+  color: $white-color;
+  text-align: center;
+}
+
+.banner {
+  background-color: $gray-color;
+  border: 1px solid $gray-color;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner p {
+  color: $secondary-color;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.carousel-item img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  background-color: $gray-color;
+}
+
+.carousel-indicators .active {
+  background-color: $primary-color;
+}
+

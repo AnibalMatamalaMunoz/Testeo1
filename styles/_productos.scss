@@ -1,0 +1,92 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+  }
+  
+  .container-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+
+    .col {
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
+      
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #999;
+        margin-bottom: 10px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 5px 0;
+            padding: 0 0 0 20px;
+            position: relative;
+          }
+          
+          li:before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            color: #999;
+          }
+      }
+    }
+    .col:nth-child(1) h1 {
+        color: #f44336;
+      }
+
+      col:nth-child(2) h1 {
+        color: #4caf50;
+      }
+      
+      .col:nth-child(2) h2 {
+        color: #4caf50;
+      }
+      
+      .col:nth-child(3) h1 {
+        color: #2196f3;
+      }
+      
+      .col:nth-child(3) h2 {
+        color: #2196f3;
+      }
+      
+      .col:nth-child(3) ul li:last-child {
+        margin-bottom: 0;
+      }
+  }  
+
+@media screen and (max-width: 768px) {
+    .col {
+        flex-basis: 100%;
+    }
+}

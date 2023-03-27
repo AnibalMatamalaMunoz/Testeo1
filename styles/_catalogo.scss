@@ -1,0 +1,13 @@
+.catalogo{
+  display: flex;
+  gap: 1rem;
+  padding-left: 5rem;
+  .carousel-item img {
+    object-fit: contain;
+  }
+}
+
+
+
+
+
